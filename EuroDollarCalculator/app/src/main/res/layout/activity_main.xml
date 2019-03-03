@@ -7,18 +7,22 @@
     android:orientation="vertical"
     tools:context=".MainActivity">
 
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/currency" />
+
     <TextView
         android:id="@+id/textView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_weight="1"
         android:text="Dollars" />
 
     <EditText
         android:id="@+id/dollarstext"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_weight="1"
+        android:layout_height="match_parent"
         android:ems="10"
         android:inputType="numberSigned" />
 
@@ -26,14 +30,12 @@
         android:id="@+id/textView2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_weight="1"
         android:text="Euros" />
 
     <EditText
         android:id="@+id/eurostext"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_weight="1"
         android:ems="10"
         android:inputType="numberSigned" />
 
@@ -41,14 +43,13 @@
         android:id="@+id/ConvertDtoE"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_weight="1"
         android:text="Convert (Dollars to Euros)" />
 
     <Button
         android:id="@+id/ConvertEtoD"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_weight="1"
         android:text="Convert (Euros to Dollars)" />
+
 
 </LinearLayout>
